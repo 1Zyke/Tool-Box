@@ -9,7 +9,7 @@ Among the following tasks that can be performed through a menu that we can displ
 
 3- View that accepts a person's name and determines the age of the person. Depending on the age it will show a message if it is a baby, child, youth, adult or elderly. Also, display an image related to the person's condition.
 
-4- View to accept a country in English and display all the universities in that country with their name and link to the official website.
+4- View to accept a country in English and display all the universities in that country (which is under maintenance) with their name and link to the official website.
 
 5- View that displays today's weather in the Dominican Republic.
 
