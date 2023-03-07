@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Age Detector<ion-icon name="accessibility-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item style="padding: 10px;">
+    <ion-label style="font-weight: bold;">Date of <br>Birth</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fechaNacimiento"></ion-datetime>
+  </ion-item>
+
+  <ion-button expand="block" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 30px;" (click)="calcularEdad()">Calculate Age</ion-button>
+
+  <ion-item *ngIf="edad">
+    <ion-label>Edad:</ion-label>
+    <ion-text style="font-weight: bold; color: blue;">{{edad}}</ion-text>
+  </ion-item>
+
+  <ion-item *ngIf="estado">
+    <ion-label>Estado:</ion-label>
+    <ion-text style="font-weight: bold; color: blue;">{{estado}}</ion-text>
+  </ion-item>
+
+  <ion-item *ngIf="imagen">
+    <ion-img style= "padding: 20px; border-radius: 20px;" [src]="imagen"></ion-img>
+  </ion-item>
+</ion-content>
